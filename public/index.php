@@ -21,7 +21,7 @@ try {
 } catch (Exception $e) {
 	$logger->error($e->getMessage());
 	http_response_code(500);
-	echo "<h1>Error:</h1><br>" . htmlspecialchars($e->getMessage(), ENT_QUOTES, 'UTF-8');
+	echo "<h1>Error: Something went wrong!</h1>";
 	die;
 }
 
