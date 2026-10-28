@@ -6,7 +6,7 @@ use App\Controllers\IndexController;
 use App\Helpers\Logger;
 use Dotenv\Dotenv;
 
-$dotenv = Dotenv::createImmutable(dirname(__DIR__));
+$dotenv = Dotenv::createImmutable(dirname(__DIR__) . '/config');
 $dotenv->load();
 
 $logger = new Logger(__DIR__ . '/../logs/app.log');
